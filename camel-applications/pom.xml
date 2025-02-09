@@ -1,0 +1,109 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+http://maven.apache.org/xsd/maven-4.0.0.xsd">               
+<modelVersion>4.0.0</modelVersion>
+<groupId>com.camexamples</groupId>
+<artifactId>camel-applications</artifactId>
+<version>0.0.1-SNAPSHOT</version>
+<properties> 
+     <project.build.sourceEncoding> project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+</properties>
+  <dependencies>
+       <!-- https://mvnrepository.com/artifact/org.apache.camel/camel-core -->
+       <dependency>
+			<groupId>com.sun.activation</groupId>
+			<artifactId>javax.activation</artifactId>
+			<version>1.2.0</version>
+			</dependency>
+       <dependency>
+    		<groupId>org.apache.camel</groupId>
+    		<artifactId>camel-core</artifactId>
+    		<version>2.25.2</version>
+	   </dependency>
+	    <dependency>
+    		<groupId>org.apache.camel</groupId>
+    		<artifactId>camel-jms</artifactId>
+    		<version>2.25.2</version>
+	   </dependency>
+      <!--<dependency>
+       https://mvnrepository.com/artifact/org.apache.camel/camel-core 
+          <groupId>org.apache.camel</groupId>
+          <artifactId>camel-spring</artifactId>
+          <version>2.25.2</version>
+      </dependency>
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-core</artifactId>
+          <version>5.2.4.RELEASE</version>
+      </dependency> -->
+      <!-- https://mvnrepository.com/artifact/org.apache.activemq/activemq-camel -->
+      <dependency>
+          <groupId>org.apache.activemq</groupId>
+          <artifactId>activemq-camel</artifactId>
+          <version>5.16.7</version>
+      </dependency>
+      <dependency>
+          <groupId>org.apache.activemq</groupId>
+          <artifactId>activemq-client</artifactId>
+          <version>5.16.7</version>
+      </dependency>
+      <dependency>
+          <groupId>org.apache.activemq</groupId>
+          <artifactId>activemq-pool</artifactId>
+          <version>5.16.7</version>
+      </dependency>
+      <dependency>
+          <groupId>org.apache.activemq</groupId>
+          <artifactId>activemq-broker</artifactId>
+          <version>5.16.7</version>
+      </dependency>
+      <dependency>
+          <groupId>org.apache.camel</groupId>
+          <artifactId>camel-jackson</artifactId>
+          <version>2.25.2</version>
+      </dependency>
+      <!-- https://mvnrepository.com/artifact/org.apache.camel/camel-test -->
+      <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-actuator -->
+
+      <dependency>
+          <groupId>org.apache.camel</groupId>
+          <artifactId>camel-stream</artifactId>
+          <version>2.25.2</version>
+      </dependency>
+      <dependency>
+          <groupId>org.apache.camel</groupId>
+          <artifactId>camel-jaxb</artifactId>
+          <version>2.25.2</version>
+      </dependency>
+      <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl -->
+        <!-- JAXB API only -->
+  <dependency>
+    <groupId>javax.xml.bind</groupId>
+    <artifactId>jaxb-api</artifactId>
+    <version>2.3.1</version>
+	</dependency>
+   <!-- JAXB RI, Jakarta XML Binding -->
+  <!--<dependency>
+      <groupId>jakarta.xml.bind</groupId>
+      <artifactId>jakarta.xml.bind-api</artifactId>
+      <version>3.0.0</version>
+  </dependency>
+  <dependency>
+      <groupId>com.sun.xml.bind</groupId>
+      <artifactId>jaxb-impl</artifactId>
+      <version>3.0.0</version>
+      <scope>runtime</scope>
+  </dependency> -->
+      <dependency>
+          <groupId>org.apache.logging.log4j</groupId>
+          <artifactId>log4j-slf4j-impl</artifactId>
+          <version>2.13.3</version>
+      </dependency>
+      <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+      <dependency>
+          <groupId>org.apache.logging.log4j</groupId>
+          <artifactId>log4j-core</artifactId>
+          <version>2.13.3</version>
+      </dependency>
+</dependencies>
+</project>
