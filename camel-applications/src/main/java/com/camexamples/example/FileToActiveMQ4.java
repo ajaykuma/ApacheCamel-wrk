@@ -11,6 +11,7 @@ import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.component.jms.JmsComponent;
 import org.apache.camel.impl.DefaultCamelContext;
 import javax.jms.ConnectionFactory;
+import java.util.Date;
 
 public class FileToActiveMQ4 {
     public static void main(String[] args) throws Exception{
@@ -28,8 +29,12 @@ public class FileToActiveMQ4 {
                         //if just reading from folder
                         //from("file:input_box?noop=True")
                 .split().tokenize("\n")
-                        .to("direct:test");
+                .to("direct:test");
                 from("direct:test")
+                .log("Routing as per content in ${file:name}")
+                //.setHeader("myHeader", constant("10Feb2025"))                                
+                .to("direct:test1");
+                from("direct:test1")
                 .choice().
                         when(body().contains("queue1-content"))
                         .to("activemq:queue:Queue1").
