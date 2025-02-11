@@ -26,32 +26,35 @@ public class ConsumeActiveMQ9 {
             @Override
             public void configure() throws Exception {
             //define endpoints
-            	from("file://input_box/?fileName=yarn-hdu-resourcemanager-um2.log&charset=utf-8&noop=true")
+            	from("file://input_box/?fileName=yarn-hdu-resourcemanager-um4.log&charset=utf-8&noop=true")
             	    .routeId("myCustomRouteId1")
             	    //.autoStartup(false)
             	    //By default, Apache Camel starts up routes in a non-deterministic order.  
             	    //to control the startup order
             	    //.startupOrder(1)
-                	//.shutdownRunningTask(ShutdownRunningTask.CompleteAllTasks)
+                	.shutdownRunningTask(ShutdownRunningTask.CompleteAllTasks)
                 	.split() //optional we can give .split(body().tokenize("\n"))
                 	.tokenize("\n")
                 	.streaming()
                 	.parallelProcessing()
                 	.to("log:processing?level=INFO")
-                .to("direct:logdata")
+                .to("direct:logdata1")
+                
                 .end()
                 .log("Done processing file: ${header.CamelFileName}");
-            	from("direct:logdata")
-                //.to("file:Output-new");
-            	.to("file://output-new?fileExist=Append&charset=utf-8");
+            	from("direct:logdata1")
+            	.to("seda:next1").transform(constant("OK"));
+            	from("seda:next1").to("mock:result");
+            	/*  //.to("file:Output-new");
+            	//.to("file://output-new?fileExist=Append&charset=utf-8");*/
             
             }});
 
         context.start();
         Thread.sleep(1 * 60 * 1000);
-        //ConsumerTemplate consumerTemplate = context.createConsumerTemplate();
-        //String message = consumerTemplate.receiveBody("direct:logdata",String.class);
-        //System.out.println("---------------" + java.time.LocalDateTime.now() + " " + message);
+        ConsumerTemplate consumerTemplate = context.createConsumerTemplate();
+        String message = consumerTemplate.receiveBody("direct:logdata",String.class);
+        System.out.println("---------------" + java.time.LocalDateTime.now() + " " + message);
         context.stop();
     }
 }

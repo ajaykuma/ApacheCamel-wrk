@@ -28,7 +28,7 @@ public class CamelTimerTimePatternExample {
                 }
             });
             camelContext.start();
-            Thread.sleep(3000);
+            Thread.sleep(2* 60* 1000);
         } finally {
             camelContext.stop();
         }

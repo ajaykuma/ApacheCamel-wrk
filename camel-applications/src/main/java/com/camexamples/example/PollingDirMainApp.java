@@ -1,5 +1,6 @@
 package com.camexamples.example;
 
+import org.apache.activemq.filter.function.inListFunction;
 import org.apache.camel.CamelContext;
 import org.apache.camel.ConsumerTemplate;
 import org.apache.camel.impl.DefaultCamelContext;
@@ -24,10 +25,9 @@ public class PollingDirMainApp {
         //Use instance of template
         String message = consumerTemplate.receiveBody("seda:end",String.class);
         System.out.println(message);
-
-
-        //Thread.sleep(5 * 60 * 1000);
-        //context.stop();
+        	
+        Thread.sleep(2 * 60 * 1000);
+        context.stop();
 
 
     }

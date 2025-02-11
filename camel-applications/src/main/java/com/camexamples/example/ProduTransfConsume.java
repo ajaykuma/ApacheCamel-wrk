@@ -16,10 +16,10 @@ public class ProduTransfConsume {
 
                         .process(new Processor() {
                             public void process(Exchange exchange) throws Exception {
-                                System.out.println("I am Testing the processor");
+                                System.out.println("Testing the processor");
                                 //Note processor has a process method that has Exchange object using which we can do a get
                                 String message = exchange.getIn().getBody(String.class);
-                                message = message.toUpperCase() + " <--msg has be altered";
+                                message = message.hashCode() + " <--msg has be altered";
                                 //setting back the object as exchange object for next endpoint to receive it
                                 exchange.getOut().setBody(message);
                             }

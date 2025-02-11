@@ -18,7 +18,7 @@ public class ObjectToActiveMQ {
         ConnectionFactory connectionFactory = new ActiveMQConnectionFactory();
         //or
 //ActiveMQConnectionFactory factory = new ActiveMQConnectionFactory("tcp://127.0.0.1:8161");
-//factory.setTrustedPackages(new ArrayList(Arrays.asList("org.apache.activemq.test,java.util.Date,
+//factory.setTrustedPackages(new ArrayList(Arrays.asList("org.apache.activemq.test, java.util.Date,
         //org.apache.camel.test".split(","))));
 //adding jms component to camel context
         context.addComponent("jms", JmsComponent.jmsComponentAutoAcknowledge(connectionFactory));

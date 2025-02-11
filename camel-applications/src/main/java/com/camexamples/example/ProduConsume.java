@@ -15,10 +15,10 @@ public class ProduConsume {
             @Override
             public void configure() throws Exception {
                 from("direct:start") //First component i.e. direct endpoint and 'start'
-                        .to("seda:end"); //Second component is seda and 'end'
+                        .to("send:end"); //Second component is seda and 'end'
             }
         });
-
+        
         context.start();
 
         //Create producer Template

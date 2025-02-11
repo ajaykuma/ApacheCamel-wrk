@@ -25,13 +25,34 @@ public class ConsumeActiveMQ8 {
             @Override
             public void configure() throws Exception {
             //define endpoints
-            from("activemq:queue:Queue2")
-            //.to("seda:end");
-            .to("seda:end?concurrentConsumers=2").log("Test");
-            from("seda:end")
+            //ActiveMQ
+            //.from("activemq:queue:Queue6")
+            from("file://input_box/?fileName=test2.txt&charset=utf-8&noop=true")
+        	    //.routeId("myCustomRouteId1")
+        	    //.autoStartup(false)
+        	    //By default, Apache Camel starts up routes in a non-deterministic order.  
+        	    //to control the startup order
+        	    .startupOrder(1)
+            	//.shutdownRunningTask(ShutdownRunningTask.CompleteAllTasks)
+            	//.split() //optional we can give .split(body().tokenize("\n"))
+            	//.tokenize("\n")
+            	//.streaming()
+            	//.parallelProcessing()
+            .to("log:processing?level=INFO")
+            //.to("seda:end").log("Test");
+            .to("seda:end").log("Test");
+            //.to("seda:end").log("Test");
+            //.to("seda:end").threads(5); //not recommended
+            from("seda:end?multipleConsumers=true").routeId("myCustomRouteId1")
+            .startupOrder(3)
             //.to("log:msgs?level=DEBUG")
             //.to("log:mylogs?showAll=true&multiline=true")
-            .to("file:Output-new");
+            .to("file://output-new2?fileExist=Append&charset=utf-8");
+            from("seda:end?multipleConsumers=true").routeId("myCustomRouteId2")
+            .startupOrder(2)
+            //.to("log:msgs?level=DEBUG")
+            //.to("log:mylogs?showAll=true&multiline=true")
+            .to("file://output-new3?fileExist=Append&charset=utf-8");
             }
         });
 
@@ -39,7 +60,7 @@ public class ConsumeActiveMQ8 {
         
         ConsumerTemplate consumerTemplate = context.createConsumerTemplate();
         String message = consumerTemplate.receiveBody("seda:end",String.class);
-        System.out.println("---------------" + java.time.LocalDateTime.now() + " " + message);
+        System.out.println("---------------" + java.time.LocalDateTime.now() + "\n " + message);
         Thread.sleep(1 * 60 * 1000);
         context.stop();
     }

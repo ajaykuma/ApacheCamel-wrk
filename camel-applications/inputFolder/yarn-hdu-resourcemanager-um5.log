@@ -1,0 +1,88 @@
+2019-08-18 20:12:35,604 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: registered UNIX signal handlers for [TERM, HUP, INT]
+2019-08-18 20:12:35,966 INFO org.apache.hadoop.conf.Configuration: found resource core-site.xml at file:/usr/local/hadoop-2.6.5/etc/hadoop/core-site.xml
+2019-08-18 20:12:36,030 INFO org.apache.hadoop.security.Groups: clearing userToGroupsMap cache
+2019-08-18 20:12:36,108 INFO org.apache.hadoop.conf.Configuration: found resource yarn-site.xml at file:/usr/local/hadoop-2.6.5/etc/hadoop/yarn-site.xml
+2019-08-18 20:12:36,316 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.RMFatalEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$RMFatalEventDispatcher
+2019-08-18 20:12:36,843 INFO org.apache.hadoop.yarn.server.resourcemanager.security.NMTokenSecretManagerInRM: NMTokenKeyRollingInterval: 86400000ms and NMTokenKeyActivationDelay: 900000ms
+2019-08-18 20:12:36,853 INFO org.apache.hadoop.yarn.server.resourcemanager.security.RMContainerTokenSecretManager: ContainerTokenKeyRollingInterval: 86400000ms and ContainerTokenKeyActivationDelay: 900000ms
+2019-08-18 20:12:36,872 INFO org.apache.hadoop.yarn.server.resourcemanager.security.AMRMTokenSecretManager: AMRMTokenKeyRollingInterval: 86400000ms and AMRMTokenKeyActivationDelay: 900000 ms
+2019-08-18 20:12:36,921 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStoreEventType for class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore$ForwardingEventHandler
+2019-08-18 20:12:36,922 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.NodesListManagerEventType for class org.apache.hadoop.yarn.server.resourcemanager.NodesListManager
+2019-08-18 20:12:36,923 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Using Scheduler: org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler
+2019-08-18 20:12:36,962 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.scheduler.event.SchedulerEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$SchedulerEventDispatcher
+2019-08-18 20:12:36,963 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$ApplicationEventDispatcher
+2019-08-18 20:12:36,970 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$ApplicationAttemptEventDispatcher
+2019-08-18 20:12:36,972 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$NodeEventDispatcher
+2019-08-18 20:12:37,077 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2019-08-18 20:12:37,191 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2019-08-18 20:12:37,191 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: ResourceManager metrics system started
+2019-08-18 20:12:37,223 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.RMAppManagerEventType for class org.apache.hadoop.yarn.server.resourcemanager.RMAppManager
+2019-08-18 20:12:37,246 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.amlauncher.AMLauncherEventType for class org.apache.hadoop.yarn.server.resourcemanager.amlauncher.ApplicationMasterLauncher
+2019-08-18 20:12:37,248 INFO org.apache.hadoop.yarn.server.resourcemanager.RMNMInfo: Registered RMNMInfo MBean
+2019-08-18 20:12:37,250 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2019-08-18 20:12:37,269 INFO org.apache.hadoop.conf.Configuration: found resource capacity-scheduler.xml at file:/usr/local/hadoop-2.6.5/etc/hadoop/capacity-scheduler.xml
+2019-08-18 20:12:37,393 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.ParentQueue: root, capacity=1.0, asboluteCapacity=1.0, maxCapacity=1.0, asboluteMaxCapacity=1.0, state=RUNNING, acls=ADMINISTER_QUEUE:*SUBMIT_APPLICATIONS:*, labels=*,
+, reservationsContinueLooking=true
+2019-08-18 20:12:37,394 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.ParentQueue: Initialized parent-queue root name=root, fullname=root
+2019-08-18 20:12:37,411 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.LeafQueue: Initializing default
+capacity = 1.0 [= (float) configuredCapacity / 100 ]
+asboluteCapacity = 1.0 [= parentAbsoluteCapacity * capacity ]
+maxCapacity = 1.0 [= configuredMaxCapacity ]
+absoluteMaxCapacity = 1.0 [= 1.0 maximumCapacity undefined, (parentAbsoluteMaxCapacity * maximumCapacity) / 100 otherwise ]
+userLimit = 100 [= configuredUserLimit ]
+userLimitFactor = 1.0 [= configuredUserLimitFactor ]
+maxApplications = 10000 [= configuredMaximumSystemApplicationsPerQueue or (int)(configuredMaximumSystemApplications * absoluteCapacity)]
+maxApplicationsPerUser = 10000 [= (int)(maxApplications * (userLimit / 100.0f) * userLimitFactor) ]
+usedCapacity = 0.0 [= usedResourcesMemory / (clusterResourceMemory * absoluteCapacity)]
+absoluteUsedCapacity = 0.0 [= usedResourcesMemory / clusterResourceMemory]
+maxAMResourcePerQueuePercent = 0.1 [= configuredMaximumAMResourcePercent ]
+minimumAllocationFactor = 0.875 [= (float)(maximumAllocationMemory - minimumAllocationMemory) / maximumAllocationMemory ]
+numContainers = 0 [= currentNumContainers ]
+state = RUNNING [= configuredState ]
+acls = ADMINISTER_QUEUE:*SUBMIT_APPLICATIONS:* [= configuredAcls ]
+nodeLocalityDelay = 40
+labels=*,
+nodeLocalityDelay = 40
+reservationsContinueLooking = true
+
+2019-08-18 20:12:37,412 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized queue: default: capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:0, vCores:0>, usedCapacity=0.0, absoluteUsedCapacity=0.0, numApps=0, numContainers=0
+2019-08-18 20:12:37,412 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized queue: root: numChildQueue= 1, capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:0, vCores:0>usedCapacity=0.0, numApps=0, numContainers=0
+2019-08-18 20:12:37,416 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized root queue root: numChildQueue= 1, capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:0, vCores:0>usedCapacity=0.0, numApps=0, numContainers=0
+2019-08-18 20:12:37,416 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized queue mappings, override: false
+2019-08-18 20:12:37,416 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized CapacityScheduler with calculator=class org.apache.hadoop.yarn.util.resource.DefaultResourceCalculator, minimumAllocation=<<memory:1024, vCores:1>>, maximumAllocation=<<memory:8192, vCores:32>>, asynchronousScheduling=false, asyncScheduleInterval=5ms
+2019-08-18 20:12:37,438 INFO org.apache.hadoop.yarn.server.resourcemanager.metrics.SystemMetricsPublisher: YARN system metrics publishing service is not enabled
+2019-08-18 20:12:37,438 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Transitioning to active state
+2019-08-18 20:12:37,468 INFO org.apache.hadoop.yarn.server.resourcemanager.security.RMContainerTokenSecretManager: Rolling master-key for container-tokens
+2019-08-18 20:12:37,468 INFO org.apache.hadoop.yarn.server.resourcemanager.security.NMTokenSecretManagerInRM: Rolling master-key for nm-tokens
+2019-08-18 20:12:37,468 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2019-08-18 20:12:37,469 INFO org.apache.hadoop.yarn.server.resourcemanager.security.RMDelegationTokenSecretManager: storing master key with keyID 1
+2019-08-18 20:12:37,557 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2019-08-18 20:12:37,557 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2019-08-18 20:12:37,557 INFO org.apache.hadoop.yarn.server.resourcemanager.security.RMDelegationTokenSecretManager: storing master key with keyID 2
+2019-08-18 20:12:37,616 INFO org.apache.hadoop.ipc.CallQueueManager: Using callQueue: class java.util.concurrent.LinkedBlockingQueue queueCapacity: 5000
+2019-08-18 20:12:37,647 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 8031
+2019-08-18 20:12:37,669 INFO org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.yarn.server.api.ResourceTrackerPB to the server
+2019-08-18 20:12:37,670 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2019-08-18 20:12:37,671 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8031: starting
+2019-08-18 20:12:37,786 INFO org.apache.hadoop.ipc.CallQueueManager: Using callQueue: class java.util.concurrent.LinkedBlockingQueue queueCapacity: 5000
+2019-08-18 20:12:37,807 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 8030
+2019-08-18 20:12:37,843 INFO org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.yarn.api.ApplicationMasterProtocolPB to the server
+2019-08-18 20:12:37,844 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2019-08-18 20:12:37,844 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8030: starting
+2019-08-18 20:12:38,074 INFO org.apache.hadoop.ipc.CallQueueManager: Using callQueue: class java.util.concurrent.LinkedBlockingQueue queueCapacity: 5000
+2019-08-18 20:12:38,080 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 9001
+2019-08-18 20:12:38,089 INFO org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.yarn.api.ApplicationClientProtocolPB to the server
+2019-08-18 20:12:38,106 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 9001: starting
+2019-08-18 20:12:38,106 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2019-08-18 20:12:38,139 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Transitioned to active state
+2019-08-18 20:12:38,289 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2019-08-18 20:12:38,306 INFO org.apache.hadoop.http.HttpRequestLog: Http request log for http.requests.resourcemanager is not defined
+2019-08-18 20:12:38,326 INFO org.apache.hadoop.http.HttpServer2: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2019-08-18 20:12:38,335 INFO org.apache.hadoop.http.HttpServer2: Added filter RMAuthenticationFilter (class=org.apache.hadoop.yarn.server.security.http.RMAuthenticationFilter) to context cluster
+2019-08-18 20:12:38,337 INFO org.apache.hadoop.http.HttpServer2: Added filter RMAuthenticationFilter (class=org.apache.hadoop.yarn.server.security.http.RMAuthenticationFilter) to context logs
+2019-08-18 20:12:38,337 INFO org.apache.hadoop.http.HttpServer2: Added filter RMAuthenticationFilter (class=org.apache.hadoop.yarn.server.security.http.RMAuthenticationFilter) to context static
+2019-08-18 20:12:38,338 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context cluster
+2019-08-18 20:12:38,348 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2019-08-18 20:12:38,349 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2019-08-18 20:12:38,354 INFO org.apache.hadoop.http.HttpServer2: adding path spec: /cluster/*
+2019-08-18 20:12:38,355 INFO org.apache.hadoop.http.HttpServer2: adding path spec: /ws/*

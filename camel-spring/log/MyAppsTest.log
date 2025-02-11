@@ -1,0 +1,9 @@
+2025-02-11 16:40:41 [main] INFO  SpringCamelContext:3137 - Apache Camel 2.25.2 (CamelContext: camel-1) is starting
+2025-02-11 16:40:41 [main] INFO  ManagedManagementStrategy:205 - JMX is enabled
+2025-02-11 16:40:42 [main] INFO  DefaultTypeConverter:66 - Type converters loaded (core: 195, classpath: 1)
+2025-02-11 16:40:42 [main] INFO  SpringCamelContext:3464 - StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+2025-02-11 16:40:42 [main] INFO  FileEndpoint:103 - Endpoint is configured with noop=true so forcing endpoint to be idempotent as well
+2025-02-11 16:40:42 [main] INFO  FileEndpoint:109 - Using default memory based idempotent repository with cache max size: 1000
+2025-02-11 16:40:42 [main] INFO  SpringCamelContext:4035 - Route: route1 started and consuming from: file://input_box?noop=true
+2025-02-11 16:40:42 [main] INFO  SpringCamelContext:3185 - Total 1 routes, of which 1 are started
+2025-02-11 16:40:42 [main] INFO  SpringCamelContext:3196 - Apache Camel 2.25.2 (CamelContext: camel-1) started in 0.569 seconds

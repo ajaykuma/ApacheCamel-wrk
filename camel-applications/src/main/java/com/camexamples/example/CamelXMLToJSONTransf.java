@@ -2,8 +2,10 @@ package com.camexamples.example;
 
 import org.apache.camel.CamelContext;
 import org.apache.camel.impl.DefaultCamelContext;
-import javax.xml.bind.JAXBContext;
 
+import jakarta.xml.bind.Unmarshaller;
+
+import javax.xml.bind.JAXBContext;
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
 import org.apache.camel.builder.RouteBuilder;
@@ -30,7 +32,7 @@ public class CamelXMLToJSONTransf {
                 JacksonDataFormat jsonDataFormat = new JacksonDataFormat(Employee.class);
 
                 // First component i.e  file and input directory and Second component i.e file and output directory
-
+                //.unmarshal().allowNullBody().jaxb()
                 from("file:inputFolder").doTry().unmarshal(xmlDataFormat).process(new MyProcessor()).marshal(jsonDataFormat).
 
                         to("file:OuputFolder").doCatch(Exception.class).process(new Processor() {
@@ -40,6 +42,7 @@ public class CamelXMLToJSONTransf {
                         System.out.println(cause);
                     }
                 });
+                
             }
         });
 
