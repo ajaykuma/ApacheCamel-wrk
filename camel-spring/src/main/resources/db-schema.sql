@@ -1,0 +1,4 @@
+CREATE TABLE scientists (
+  scId VARCHAR(10) NOT NULL,
+  scName VARCHAR(100) NOT NULL
+);

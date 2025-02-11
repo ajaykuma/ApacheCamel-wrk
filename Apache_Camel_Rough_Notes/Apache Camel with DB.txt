@@ -1,0 +1,250 @@
+Apache Camel with Mysql Db
+---------------
+install mysql and create database : cameldb
+
+Add dependency to POM
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-sql</artifactId>
+			<version>2.17.1</version>
+		</dependency>
+
+Also you may need:
+        <dependency>
+            <groupId>commons-dbcp</groupId>
+            <artifactId>commons-dbcp</artifactId>
+            <version>1.2.2</version>
+        </dependency>
+
+for
+org.apache.commons.dbcp.BasicDataSource
+------------
+
+Define a script:
+CREATE TABLE scientists (
+  scId VARCHAR(10) NOT NULL,
+  scName VARCHAR(100) NOT NULL
+);
+
+----------------
+Next define properties file for inserting and retrieving data from the table.
+sql.insertScientists=INSERT INTO scientists(scId, scName) VALUES (:#scId, :#scName)
+sql.getAllScientists=select * from scientists
+-------------------
+Define the domain class scientists for holding the data to be stored in the db.
+package 
+public class Scientist {
+
+    private String scId;
+    private String scName;
+
+    public String getscId() {
+        return scId;
+    }
+
+    public void setscId(String scId) {
+        this.scId = scId;
+    }
+public String getscName() {
+        return scName;
+    }
+
+    public void setscName(String scName) {
+        this.scName = scName;
+    }
+
+    @Override
+    public String toString() {
+        return "Scientist [scId=" + scId + ", scName=" + scName + "]";
+    }
+
+}
+
+--------------
+Here : used while retrieving and saving data from db.
+using getMap method, gets the data from scientist object ,store it in map and then we call the insert query.
+
+Define the ScientistMapper class as follows-
+package
+
+import package.Scientist;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class ScientistMapper {
+
+    public Map<String, Object> getMap(Scientist scientist) {
+        Map<String, Object> answer = new HashMap<String, Object>();
+        answer.put("scId", scientist.getscId());
+        answer.put("scName", scientist.getscName());
+        return answer;
+    }
+public List<Scientist> readScientists(List<Map<String, String>> dataList) {
+
+        System.out.println("data:" + dataList);
+
+        List<Scientist> scientists = new ArrayList<Scientist>();
+
+        for (Map<String, String> data : dataList) {
+
+            Scientist scientist = new Scientist();
+
+            scientist.setscId(data.get("scId"));
+            scientist.setscName(data.get("scName"));
+scientists.add(scientist);
+        }
+
+        return scientists;
+    }
+}
+-------------------
+Define the route
+package ;
+
+import org.apache.camel.builder.RouteBuilder;
+
+public class ScientistRouter extends RouteBuilder {
+
+    @Override
+    public void configure() throws Exception {
+
+        from("direct:insert").log("Inserted new Scientist").beanRef("scientistMapper", "getMap")
+            .to("sqlComponent:{{sql.insertScientist}}");
+
+        from("direct:select").to("sqlComponent:{{sql.getAllScientists}}")
+            .beanRef("scientistMapper", "readScientists").log("${body}");
+    }
+
+}
+----------------------
+Define the configuration file . Using the configuration file we configure the database,
+ execute the create SQL DB script file, load the Java DSL routes.
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:cxf="http://camel.apache.org/schema/cxf" xmlns:jaxrs="http://cxf.apache.org/jaxrs"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://camel.apache.org/schema/cxf
+       http://camel.apache.org/schema/cxf/camel-cxf.xsd 
+       http://cxf.apache.org/jaxrs
+       http://cxf.apache.org/schemas/jaxrs.xsd
+       http://www.springframework.org/schema/jdbc 
+       http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd
+       http://camel.apache.org/schema/spring
+       http://camel.apache.org/schema/spring/camel-spring.xsd
+       http://www.springframework.org/schema/context 
+       http://www.springframework.org/schema/context/spring-context.xsd ">
+
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost/cameldb" />
+		<property name="username" value="root" />
+		<property name="password" value="rida" />
+	</bean>
+
+	<jdbc:initialize-database data-source="dataSource"
+		enabled="true">
+		<jdbc:script location="classpath:db-schema.sql" />
+	</jdbc:initialize-database>
+        <bean id="sqlComponent" class="org.apache.camel.component.sql.SqlComponent">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<bean id="scientistMapper" class="com.camexamples.example.ScientistMapper" />
+	<bean id="scientistRouter" class="com.camexamples.example.ScientistRouter" />
+
+	<camelContext id="scientistContext" xmlns="http://camel.apache.org/schema/spring">
+
+		<propertyPlaceholder id="placeholder" location="classpath:sql.properties" />
+		<routeBuilder ref="scientistRouter" />
+
+	</camelContext>
+
+        </beans>
+
+------------------------
+
+Load the config and call the route
+package com.camexamples.example;
+
+import com.camexamples.example.Scientist;
+import java.util.Date;
+import java.util.List;
+import org.apache.camel.CamelContext;
+import org.apache.camel.ProducerTemplate;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class CamelMain {
+
+    public static void main(String[] args) {
+try {
+            ApplicationContext springCtx = new ClassPathXmlApplicationContext("database-context.xml");
+
+            CamelContext context = springCtx.getBean("scientistContext", CamelContext.class);
+
+            context.start();
+
+            ProducerTemplate producerTemplate = context.createProducerTemplate();
+	// Insert sc 1
+            Scientist sc1 = getScientist1();
+            String resp = producerTemplate.requestBody("direct:insert", sc1, String.class);
+
+            // Insert sc 2
+            Scientist sc2 = getScientist2();
+            resp = producerTemplate.requestBody("direct:insert", sc2, String.class);
+	// Get Scientist of inserted scientists
+            List<Scientist> scientists = producerTemplate.requestBody("direct:select", null, List.class);
+            System.out.println("scientists:" + scientists);
+
+        }
+        catch (Exception e) {
+
+            e.printStackTrace();
+
+        }
+    }
+
+	private static Scientist getScientist1() {
+
+        Scientist sc = new Scientist();
+
+       sc.setscId("scId1");
+        sc.setscName("sc1");
+        return sc;
+
+    }
+
+private static Scientist getScientist2() {
+
+        Scientist sc = new Scientist();
+
+        sc.setscId("empId2");
+        sc.setscName("emp2");
+        return sc;
+
+    }
+}
+-------------------------
+Refer: camel-spring
+Scientist.java
+ScientistMapper.java
+ScientistRouter.java
+ScientistMain.java
+src>main>resources
+applicationContextsc.xml
+db-schema.sql
+sql.properties
+
+
+
+
+
+
+

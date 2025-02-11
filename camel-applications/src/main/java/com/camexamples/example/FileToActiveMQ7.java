@@ -32,11 +32,13 @@ public class FileToActiveMQ7 {
                         //.tokenize("\n")
                         .to("direct:test1");
                 from("direct:test1")
-                       .wireTap("activemq:queue:DeadLetterQueue").to("direct:test2");
+                       .wireTap("activemq:queue:DeadLetterQueue").log("log:tapping")
+                       .to("direct:test2");
                 from("direct:test2")
-                        .process(new Processor() {
+                .delay(5000)
+                .process(new Processor() {
                             public void process(Exchange arg0) throws Exception {
-                                System.out.println(arg0.getIn().getBody().toString());
+                                System.out.println(arg0.getIn().getBody(String.class).toString());
                             }
             });
         }});

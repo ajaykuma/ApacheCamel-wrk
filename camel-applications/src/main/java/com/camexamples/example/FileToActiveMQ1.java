@@ -27,7 +27,7 @@ public class FileToActiveMQ1 {
                 we will have to give file with specifics as shows in other examples
                  */
                 from("file://inbox")
-                        .to("activemq:queue:my_queue1");
+                .to("activemq:queue:Queue1");
             }
         });
         //starting the context & running infinitely
@@ -36,7 +36,7 @@ public class FileToActiveMQ1 {
         //
         // Start the context with sleep time
         context.start();
-        Thread.sleep(5 * 60 * 1000);
+        Thread.sleep(2 * 60 * 1000);
         context.stop();
     }
 }

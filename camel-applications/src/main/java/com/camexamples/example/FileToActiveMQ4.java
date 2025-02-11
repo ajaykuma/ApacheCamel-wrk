@@ -26,23 +26,22 @@ public class FileToActiveMQ4 {
             public void configure() throws Exception {
                 //define endpoints
                 from("file://input_box/?fileName=test2.txt&charset=utf-8&noop=true")
-                        //if just reading from folder
-                        //from("file:input_box?noop=True")
-                .split().tokenize("\n")
+                    .log("Starting to process file: ${header.CamelFileName}")
+                	.split().tokenize("\n")
                 .to("direct:test");
                 from("direct:test")
-                .log("Routing as per content in ${file:name}")
-                //.setHeader("myHeader", constant("10Feb2025"))                                
+                	.setHeader("myHeader", constant("10Feb2025"))
+                    .log("Routing as per content in ${file:name}")
                 .to("direct:test1");
                 from("direct:test1")
-                .choice().
+                	.choice().
                         when(body().contains("queue1-content"))
-                        .to("activemq:queue:Queue1").
+                    .to("activemq:queue:Queue1").
                         when(body().contains("queue2-content"))
-                        .to("activemq:queue:Queue2")
+                    .to("activemq:queue:Queue2")
                         .when(body().contains("queue3-content"))
-                        .to("activemq:queue:Queue3").
-                        otherwise()
+                    .to("activemq:queue:Queue3").
+                    otherwise()
                 .to("activemq:queue:my_queue_extras");
             }
         });

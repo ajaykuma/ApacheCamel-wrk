@@ -36,7 +36,7 @@ public class FileToActiveMQ2 {
 
                             }
                         }) //method that takes processor as an argument
-                        .to("activemq:queue:my_queue2");
+                .to("activemq:queue:my_queue3");
 
 
             }

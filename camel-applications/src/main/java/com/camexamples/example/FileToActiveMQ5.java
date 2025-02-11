@@ -28,10 +28,13 @@ public class FileToActiveMQ5 {
                         //if just reading from folder
                         //from("file://input_box?noop=True")
                         .split().tokenize("\n").streaming()
-                        .to("direct:test");
-
+                .to("direct:test");
+                from("timer://myTimer?period=2000")
+                .to("log:TimerRoute?level=INFO&showAll=true");
                 from("direct:test")
-                .filter(body().contains("ERROR")).transform(regexReplaceAll(body(),"ERROR","SEND_NOTIFICATION"))
+                	.filter(body().contains("ERROR"))
+                	.transform(regexReplaceAll(body(),"ERROR","SEND_NOTIFICATION"))
+                	.log("error msgs to be notified about")
                 .to("activemq:queue:NewErrorMsgs1");
             }
         });
@@ -41,7 +44,7 @@ public class FileToActiveMQ5 {
         //
         // Start the context with sleep time
         context.start();
-        Thread.sleep(5 * 60 * 1000);
+        Thread.sleep(2 * 60 * 1000);
         context.stop();
     }
 }

@@ -23,9 +23,9 @@ public class FileToActiveMQ3 {
                         .tokenize("\n")
                         .streaming()
                         .loadBalance().roundRobin()
-                        .to("activemq:queue:test1")
-                        .to("activemq:queue:test2")
-                        .to("activemq:queue:test3");
+                .to("activemq:queue:Queue1")
+                .to("activemq:queue:Queue2")
+                .to("activemq:queue:Queue3");
 
             }
         });

@@ -1,1 +1,3 @@
-this is a sample data to be written in ActiveMQ queue
+this is a sample data to be 
+written in 
+ActiveMQ queue

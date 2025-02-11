@@ -5,7 +5,6 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.Scanner;
-
 import org.apache.logging.log4j.util.StringBuilderFormattable;
 import org.springframework.core.log.LogFormatUtils;
 

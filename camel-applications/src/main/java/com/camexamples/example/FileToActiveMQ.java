@@ -33,7 +33,7 @@ public class FileToActiveMQ {
                                 exchange.getOut().setBody(message);
                             }
                         }) //method that takes processor as an argument
-                        .to("activemq:queue:my_queue");
+                .to("activemq:queue:my_queue");
             }
         });
         //while(true)
