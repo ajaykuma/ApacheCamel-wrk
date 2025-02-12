@@ -30,11 +30,11 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <artifactId>camel-netty4</artifactId>
     <version>2.24.1</version>
 	</dependency>
-	   <dependency>
+	 <!--  <dependency>
     <groupId>org.apache.camel</groupId>
     <artifactId>camel-servlet</artifactId>
     <version>4.9.0</version>
-	</dependency>
+	</dependency>-->
       <!--<dependency>
        https://mvnrepository.com/artifact/org.apache.camel/camel-core 
           <groupId>org.apache.camel</groupId>
@@ -93,7 +93,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <version>2.3.1</version>
 	</dependency>
    <!-- JAXB RI, Jakarta XML Binding -->
-  <!--<dependency>
+  <dependency>
       <groupId>jakarta.xml.bind</groupId>
       <artifactId>jakarta.xml.bind-api</artifactId>
       <version>3.0.0</version>
@@ -103,7 +103,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
       <artifactId>jaxb-impl</artifactId>
       <version>3.0.0</version>
       <scope>runtime</scope>
-  </dependency> -->
+  </dependency>
       <dependency>
           <groupId>org.apache.logging.log4j</groupId>
           <artifactId>log4j-slf4j-impl</artifactId>

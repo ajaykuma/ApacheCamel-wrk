@@ -259,6 +259,8 @@ logging.level.org.apache.camel=INFO
 # Log file name
 logging.file.name=application.log
 
+spring.jmx.enabled = true
+
 in src/main/java > com.example.springbootcamelintegration
 --has SpringBootCamelIntegrationApplication.java by default
 ----------
@@ -347,5 +349,25 @@ Access browser : http://localhost:8080/startFileMove (to check)
 We can use tool such as Postman to send GET request
 After sending the request, check the destination directory to verify that the file has been moved and renamed with a .bak extension.
 ----------------
+Add dependencies
+		<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<dependency>
+    	<groupId>org.jolokia</groupId>
+    	<artifactId>jolokia-core</artifactId>
+    	<version>1.7.2</version>
+		</dependency>
+
+
+Actuator is a component in Spring Boot which provides a bunch of production-ready features. Actuator also has nice support for Jolokia and will configure it for you!
+Once pom is added do a  : mvn org.springframework.boot:spring-boot-maven-plugin:run
+From terminal : $ curl http://localhost:8080/actuator/jolokia/read/org.apache.camel:context\=\*,type\=routes,name\=\*
+
+<dependency>
+<groupId>org.apache.camel</groupId>
+    <artifactId>camel-metrics</artifactId>
+    </dependency>
 
 

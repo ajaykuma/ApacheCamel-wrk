@@ -11,9 +11,10 @@ public class InterceptrouteBuilder2 extends RouteBuilder {
 	@Override
 	public void configure() throws Exception {
 	
-		interceptFrom("*")
+		interceptFrom("file*")
 		.process(new Processor() {
 			public void process(Exchange exchange) {
+				
 				count++;
 				System.out.println("interceptor called " + count + " times " + exchange.getIn().getBody());
 

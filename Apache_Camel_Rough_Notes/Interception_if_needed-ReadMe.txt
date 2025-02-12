@@ -37,7 +37,8 @@ from("file:inbox")
 when Apache Camel is sending a message to an endpoint.
 
 This can be used to do some custom processing before the message is sent to the intended destination.
-The interceptor can also be configured to not send to the destination (skip) which means the message is detoured instead.
+The interceptor can also be configured to not send to the destination (skip) which means the message is 
+detoured instead.
 A Predicate can also be used to control when to intercept, which has been previously covered.
 
 

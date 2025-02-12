@@ -11,14 +11,19 @@ public class InterceptrouteBuilder1 extends RouteBuilder {
 	@Override
 	public void configure() throws Exception {
 
-		intercept().process(new Processor() {
+		intercept().when(body().contains("data")).log("datafound");
+		//no more routing when data is found
+		//intercept to log endpoint..
+		/*.process(new Processor() {
 			public void process(Exchange exchange) {
 				count++;
 				System.out.println("interceptor called " + count + " times " + exchange.getIn().getBody());
 
 			}
-		});
-		from("file:inbox?noop=true").split().tokenize("\n").to("activemq:queue:Que1").to("activemq:queue:Que2");
+		});*/
+		from("file:inbox?noop=true").split().tokenize("\n")
+		//.parallelProcessing()
+		.to("activemq:queue:Que1").to("activemq:queue:Que2");
 	}
 
 }

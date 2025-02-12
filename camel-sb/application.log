@@ -221,3 +221,574 @@ Caused by: java.lang.ClassNotFoundException: org.apache.camel.spring.spi.CamelBe
 2025-02-12T14:30:07.771+01:00  INFO 9020 --- [spring-boot-camel-integration] [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   : Routes stopped (total:1)
 2025-02-12T14:30:07.772+01:00  INFO 9020 --- [spring-boot-camel-integration] [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   :     Stopped route1 (direct://fileMoveRoute)
 2025-02-12T14:30:07.779+01:00  INFO 9020 --- [spring-boot-camel-integration] [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-1) shutdown in 22ms (uptime:2s)
+2025-02-12T15:33:02.590+01:00  INFO 7064 --- [spring-boot-camel-integration] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-02-12T15:33:02.884+01:00  INFO 7064 --- [spring-boot-camel-integration] [Thread-7] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-2) is shutting down (timeout:45s)
+2025-02-12T15:33:02.886+01:00  INFO 7064 --- [spring-boot-camel-integration] [Thread-7] o.a.c.impl.engine.AbstractCamelContext   : Routes stopped (total:1)
+2025-02-12T15:33:02.886+01:00  INFO 7064 --- [spring-boot-camel-integration] [Thread-7] o.a.c.impl.engine.AbstractCamelContext   :     Stopped route2 (direct://fileMoveRoute)
+2025-02-12T15:33:02.888+01:00  INFO 7064 --- [spring-boot-camel-integration] [Thread-7] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-2) shutdown in 3ms (uptime:1h3m)
+2025-02-12T15:33:02.983+01:00  INFO 7064 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : Starting SpringBootCamelIntegrationApplication using Java 17.0.12 with PID 7064 (C:\Users\Ajay kumar\Downloads\ApacheCamel\Apache-Camel\camel-sb\target\classes started by AjayS in C:\Users\Ajay kumar\Downloads\ApacheCamel\Apache-Camel\camel-sb)
+2025-02-12T15:33:02.983+01:00  INFO 7064 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : No active profile set, falling back to 1 default profile: "default"
+2025-02-12T15:33:03.882+01:00  INFO 7064 --- [spring-boot-camel-integration] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-12T15:33:03.894+01:00  INFO 7064 --- [spring-boot-camel-integration] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-12T15:33:03.896+01:00  INFO 7064 --- [spring-boot-camel-integration] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-12T15:33:04.090+01:00  INFO 7064 --- [spring-boot-camel-integration] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-12T15:33:04.093+01:00  INFO 7064 --- [spring-boot-camel-integration] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1106 ms
+2025-02-12T15:33:04.718+01:00  INFO 7064 --- [spring-boot-camel-integration] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-12T15:33:04.727+01:00  INFO 7064 --- [spring-boot-camel-integration] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-12T15:33:04.785+01:00  INFO 7064 --- [spring-boot-camel-integration] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-12T15:33:04.864+01:00  INFO 7064 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-4) is starting
+2025-02-12T15:33:04.871+01:00  INFO 7064 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   : Routes startup (total:1)
+2025-02-12T15:33:04.872+01:00  INFO 7064 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   :     Started route3 (direct://fileMoveRoute)
+2025-02-12T15:33:04.872+01:00  INFO 7064 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-4) started in 7ms (build:0ms init:0ms start:7ms)
+2025-02-12T15:33:04.874+01:00  INFO 7064 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : Started SpringBootCamelIntegrationApplication in 1.923 seconds (process running for 3953.101)
+2025-02-12T15:33:04.879+01:00  INFO 7064 --- [spring-boot-camel-integration] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-02-12T15:33:56.887+01:00  INFO 13480 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : Starting SpringBootCamelIntegrationApplication using Java 17.0.12 with PID 13480 (C:\Users\Ajay kumar\Downloads\ApacheCamel\Apache-Camel\camel-sb\target\classes started by AjayS in C:\Users\Ajay kumar\Downloads\ApacheCamel\Apache-Camel\camel-sb)
+2025-02-12T15:33:56.894+01:00  INFO 13480 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : No active profile set, falling back to 1 default profile: "default"
+2025-02-12T15:33:57.054+01:00  INFO 13480 --- [spring-boot-camel-integration] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Ajay kumar\.m2\repository\com\sun\xml\bind\jaxb-core\4.0.5\jaxb-core-4.0.5.jar referenced one or more files that do not exist: file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jakarta.activation-api.jar,file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jakarta.xml.bind-api.jar
+2025-02-12T15:33:57.055+01:00  INFO 13480 --- [spring-boot-camel-integration] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Ajay kumar\.m2\repository\com\sun\xml\bind\jaxb-impl\4.0.5\jaxb-impl-4.0.5.jar referenced one or more files that do not exist: file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-impl/4.0.5/jaxb-core.jar,file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-impl/4.0.5/angus-activation.jar
+2025-02-12T15:33:57.055+01:00  INFO 13480 --- [spring-boot-camel-integration] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-12T15:33:57.055+01:00  INFO 13480 --- [spring-boot-camel-integration] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-12T15:34:01.246+01:00  INFO 13480 --- [spring-boot-camel-integration] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-12T15:34:01.283+01:00  INFO 13480 --- [spring-boot-camel-integration] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-12T15:34:01.286+01:00  INFO 13480 --- [spring-boot-camel-integration] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-12T15:34:01.512+01:00  INFO 13480 --- [spring-boot-camel-integration] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-12T15:34:01.514+01:00  INFO 13480 --- [spring-boot-camel-integration] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4457 ms
+2025-02-12T15:34:04.770+01:00  WARN 13480 --- [spring-boot-camel-integration] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-02-12T15:34:04.784+01:00  INFO 13480 --- [spring-boot-camel-integration] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-12T15:34:05.002+01:00  WARN 13480 --- [spring-boot-camel-integration] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-02-12T15:34:05.067+01:00  INFO 13480 --- [spring-boot-camel-integration] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-12T15:34:05.146+01:00 ERROR 13480 --- [spring-boot-camel-integration] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-02-12T15:34:39.054+01:00  INFO 5104 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : Starting SpringBootCamelIntegrationApplication using Java 17.0.12 with PID 5104 (C:\Users\Ajay kumar\Downloads\ApacheCamel\Apache-Camel\camel-sb\target\classes started by AjayS in C:\Users\Ajay kumar\Downloads\ApacheCamel\Apache-Camel\camel-sb)
+2025-02-12T15:34:39.061+01:00  INFO 5104 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : No active profile set, falling back to 1 default profile: "default"
+2025-02-12T15:34:39.226+01:00  INFO 5104 --- [spring-boot-camel-integration] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Ajay kumar\.m2\repository\com\sun\xml\bind\jaxb-core\4.0.5\jaxb-core-4.0.5.jar referenced one or more files that do not exist: file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jakarta.activation-api.jar,file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jakarta.xml.bind-api.jar
+2025-02-12T15:34:39.228+01:00  INFO 5104 --- [spring-boot-camel-integration] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Ajay kumar\.m2\repository\com\sun\xml\bind\jaxb-impl\4.0.5\jaxb-impl-4.0.5.jar referenced one or more files that do not exist: file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-impl/4.0.5/jaxb-core.jar,file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-impl/4.0.5/angus-activation.jar
+2025-02-12T15:34:39.229+01:00  INFO 5104 --- [spring-boot-camel-integration] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-12T15:34:39.230+01:00  INFO 5104 --- [spring-boot-camel-integration] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-12T15:34:43.842+01:00  INFO 5104 --- [spring-boot-camel-integration] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-12T15:34:43.880+01:00  INFO 5104 --- [spring-boot-camel-integration] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-12T15:34:43.881+01:00  INFO 5104 --- [spring-boot-camel-integration] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-12T15:34:44.065+01:00  INFO 5104 --- [spring-boot-camel-integration] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-12T15:34:44.066+01:00  INFO 5104 --- [spring-boot-camel-integration] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4834 ms
+2025-02-12T15:34:49.735+01:00  INFO 5104 --- [spring-boot-camel-integration] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-12T15:34:49.771+01:00  INFO 5104 --- [spring-boot-camel-integration] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-12T15:34:50.111+01:00  INFO 5104 --- [spring-boot-camel-integration] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-12T15:34:51.651+01:00  INFO 5104 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-2) is starting
+2025-02-12T15:34:51.743+01:00  INFO 5104 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   : Routes startup (total:1)
+2025-02-12T15:34:51.746+01:00  INFO 5104 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   :     Started route1 (direct://fileMoveRoute)
+2025-02-12T15:34:51.746+01:00  INFO 5104 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-2) started in 75ms (build:0ms init:0ms start:75ms)
+2025-02-12T15:34:51.764+01:00  INFO 5104 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : Started SpringBootCamelIntegrationApplication in 13.912 seconds (process running for 15.397)
+2025-02-12T15:39:19.290+01:00  INFO 5104 --- [spring-boot-camel-integration] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-12T15:39:19.291+01:00  INFO 5104 --- [spring-boot-camel-integration] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-12T15:39:19.300+01:00  INFO 5104 --- [spring-boot-camel-integration] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2025-02-12T15:39:19.480+01:00  INFO 5104 --- [spring-boot-camel-integration] [http-nio-8080-exec-3] route1                                   : Processing file: 
+2025-02-12T15:48:55.467+01:00  INFO 8968 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : Starting SpringBootCamelIntegrationApplication using Java 17.0.12 with PID 8968 (C:\Users\Ajay kumar\Downloads\ApacheCamel\Apache-Camel\camel-sb\target\classes started by AjayS in C:\Users\Ajay kumar\Downloads\ApacheCamel\Apache-Camel\camel-sb)
+2025-02-12T15:48:55.480+01:00  INFO 8968 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : No active profile set, falling back to 1 default profile: "default"
+2025-02-12T15:48:55.632+01:00  INFO 8968 --- [spring-boot-camel-integration] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Ajay kumar\.m2\repository\com\sun\xml\bind\jaxb-core\4.0.5\jaxb-core-4.0.5.jar referenced one or more files that do not exist: file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jakarta.activation-api.jar,file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jakarta.xml.bind-api.jar
+2025-02-12T15:48:55.634+01:00  INFO 8968 --- [spring-boot-camel-integration] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Ajay kumar\.m2\repository\com\sun\xml\bind\jaxb-impl\4.0.5\jaxb-impl-4.0.5.jar referenced one or more files that do not exist: file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-impl/4.0.5/jaxb-core.jar,file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-impl/4.0.5/angus-activation.jar
+2025-02-12T15:48:55.635+01:00  INFO 8968 --- [spring-boot-camel-integration] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-12T15:48:55.635+01:00  INFO 8968 --- [spring-boot-camel-integration] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-12T15:48:57.511+01:00  WARN 8968 --- [spring-boot-camel-integration] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: java.lang.IllegalStateException: Error processing condition on org.apache.camel.spring.boot.CamelAutoConfiguration.routesCollector
+2025-02-12T15:48:57.534+01:00  INFO 8968 --- [spring-boot-camel-integration] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-12T15:48:57.591+01:00 ERROR 8968 --- [spring-boot-camel-integration] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Error processing condition on org.apache.camel.spring.boot.CamelAutoConfiguration.routesCollector
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60) ~[spring-boot-autoconfigure-3.3.8.jar:3.3.8]
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108) ~[spring-context-6.1.16.jar:6.1.16]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:182) ~[spring-context-6.1.16.jar:6.1.16]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:143) ~[spring-context-6.1.16.jar:6.1.16]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:119) ~[spring-context-6.1.16.jar:6.1.16]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:429) ~[spring-context-6.1.16.jar:6.1.16]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290) ~[spring-context-6.1.16.jar:6.1.16]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.1.16.jar:6.1.16]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.1.16.jar:6.1.16]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:789) ~[spring-context-6.1.16.jar:6.1.16]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:607) ~[spring-context-6.1.16.jar:6.1.16]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.8.jar:3.3.8]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.8.jar:3.3.8]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.8.jar:3.3.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.8.jar:3.3.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.8.jar:3.3.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.8.jar:3.3.8]
+	at com.example.springbootcamelintegration.SpringBootCamelIntegrationApplication.main(SpringBootCamelIntegrationApplication.java:16) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.8.jar:3.3.8]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.apache.camel.spring.boot.CamelAutoConfiguration] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@659e0bfd]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483) ~[spring-core-6.1.16.jar:6.1.16]
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:360) ~[spring-core-6.1.16.jar:6.1.16]
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:417) ~[spring-core-6.1.16.jar:6.1.16]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$1(AbstractAutowireCapableBeanFactory.java:750) ~[spring-beans-6.1.16.jar:6.1.16]
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708) ~[na:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:749) ~[spring-beans-6.1.16.jar:6.1.16]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:682) ~[spring-beans-6.1.16.jar:6.1.16]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:653) ~[spring-beans-6.1.16.jar:6.1.16]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1687) ~[spring-beans-6.1.16.jar:6.1.16]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:562) ~[spring-beans-6.1.16.jar:6.1.16]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:534) ~[spring-beans-6.1.16.jar:6.1.16]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:247) ~[spring-boot-autoconfigure-3.3.8.jar:3.3.8]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:240) ~[spring-boot-autoconfigure-3.3.8.jar:3.3.8]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:230) ~[spring-boot-autoconfigure-3.3.8.jar:3.3.8]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:183) ~[spring-boot-autoconfigure-3.3.8.jar:3.3.8]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:158) ~[spring-boot-autoconfigure-3.3.8.jar:3.3.8]
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47) ~[spring-boot-autoconfigure-3.3.8.jar:3.3.8]
+	... 22 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/apache/camel/spring/spi/CamelBeanPostProcessor
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465) ~[spring-core-6.1.16.jar:6.1.16]
+	... 38 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.apache.camel.spring.spi.CamelBeanPostProcessor
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
+	... 42 common frames omitted
+
+2025-02-12T15:49:58.152+01:00  INFO 3028 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : Starting SpringBootCamelIntegrationApplication using Java 17.0.12 with PID 3028 (C:\Users\Ajay kumar\Downloads\ApacheCamel\Apache-Camel\camel-sb\target\classes started by AjayS in C:\Users\Ajay kumar\Downloads\ApacheCamel\Apache-Camel\camel-sb)
+2025-02-12T15:49:58.157+01:00  INFO 3028 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : No active profile set, falling back to 1 default profile: "default"
+2025-02-12T15:49:58.306+01:00  INFO 3028 --- [spring-boot-camel-integration] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Ajay kumar\.m2\repository\com\sun\xml\bind\jaxb-core\4.0.5\jaxb-core-4.0.5.jar referenced one or more files that do not exist: file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jakarta.activation-api.jar,file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jakarta.xml.bind-api.jar
+2025-02-12T15:49:58.307+01:00  INFO 3028 --- [spring-boot-camel-integration] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Ajay kumar\.m2\repository\com\sun\xml\bind\jaxb-impl\4.0.5\jaxb-impl-4.0.5.jar referenced one or more files that do not exist: file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-impl/4.0.5/jaxb-core.jar,file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-impl/4.0.5/angus-activation.jar
+2025-02-12T15:49:58.308+01:00  INFO 3028 --- [spring-boot-camel-integration] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-12T15:49:58.308+01:00  INFO 3028 --- [spring-boot-camel-integration] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-12T15:50:02.604+01:00  INFO 3028 --- [spring-boot-camel-integration] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-12T15:50:02.666+01:00  INFO 3028 --- [spring-boot-camel-integration] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-12T15:50:02.667+01:00  INFO 3028 --- [spring-boot-camel-integration] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-12T15:50:02.983+01:00  INFO 3028 --- [spring-boot-camel-integration] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-12T15:50:02.985+01:00  INFO 3028 --- [spring-boot-camel-integration] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4675 ms
+2025-02-12T15:50:06.745+01:00  INFO 3028 --- [spring-boot-camel-integration] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-12T15:50:07.414+01:00  INFO 3028 --- [spring-boot-camel-integration] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-12T15:50:08.649+01:00  INFO 3028 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-2) is starting
+2025-02-12T15:50:08.723+01:00  INFO 3028 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   : Routes startup (total:1)
+2025-02-12T15:50:08.724+01:00  INFO 3028 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   :     Started route1 (direct://fileMoveRoute)
+2025-02-12T15:50:08.726+01:00  INFO 3028 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-2) started in 69ms (build:0ms init:0ms start:69ms)
+2025-02-12T15:50:08.741+01:00  INFO 3028 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : Started SpringBootCamelIntegrationApplication in 11.791 seconds (process running for 13.238)
+2025-02-12T15:51:30.121+01:00  INFO 3028 --- [spring-boot-camel-integration] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-12T15:51:30.122+01:00  INFO 3028 --- [spring-boot-camel-integration] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-12T15:51:30.129+01:00  INFO 3028 --- [spring-boot-camel-integration] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2025-02-12T15:51:30.286+01:00  INFO 3028 --- [spring-boot-camel-integration] [http-nio-8080-exec-3] route1                                   : Processing file: 
+2025-02-12T16:11:57.102+01:00  INFO 4200 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : Starting SpringBootCamelIntegrationApplication using Java 17.0.12 with PID 4200 (C:\Users\Ajay kumar\Downloads\ApacheCamel\Apache-Camel\camel-sb\target\classes started by AjayS in C:\Users\Ajay kumar\Downloads\ApacheCamel\Apache-Camel\camel-sb)
+2025-02-12T16:11:57.118+01:00  INFO 4200 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : No active profile set, falling back to 1 default profile: "default"
+2025-02-12T16:11:57.207+01:00  INFO 4200 --- [spring-boot-camel-integration] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Ajay kumar\.m2\repository\com\sun\xml\bind\jaxb-core\4.0.5\jaxb-core-4.0.5.jar referenced one or more files that do not exist: file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jakarta.activation-api.jar,file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jakarta.xml.bind-api.jar
+2025-02-12T16:11:57.207+01:00  INFO 4200 --- [spring-boot-camel-integration] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Ajay kumar\.m2\repository\com\sun\xml\bind\jaxb-impl\4.0.5\jaxb-impl-4.0.5.jar referenced one or more files that do not exist: file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-impl/4.0.5/jaxb-core.jar,file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-impl/4.0.5/angus-activation.jar
+2025-02-12T16:11:57.207+01:00  INFO 4200 --- [spring-boot-camel-integration] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-12T16:11:57.207+01:00  INFO 4200 --- [spring-boot-camel-integration] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-12T16:11:58.439+01:00  INFO 4200 --- [spring-boot-camel-integration] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-12T16:11:58.455+01:00  INFO 4200 --- [spring-boot-camel-integration] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-12T16:11:58.455+01:00  INFO 4200 --- [spring-boot-camel-integration] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-12T16:11:58.517+01:00  INFO 4200 --- [spring-boot-camel-integration] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-12T16:11:58.517+01:00  INFO 4200 --- [spring-boot-camel-integration] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1310 ms
+2025-02-12T16:11:59.343+01:00  INFO 4200 --- [spring-boot-camel-integration] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-12T16:11:59.437+01:00  INFO 4200 --- [spring-boot-camel-integration] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-12T16:11:59.780+01:00  INFO 4200 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-2) is starting
+2025-02-12T16:11:59.796+01:00  INFO 4200 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   : Routes startup (total:1)
+2025-02-12T16:11:59.812+01:00  INFO 4200 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   :     Started route1 (direct://fileMoveRoute)
+2025-02-12T16:11:59.812+01:00  INFO 4200 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-2) started in 25ms (build:0ms init:0ms start:25ms)
+2025-02-12T16:11:59.812+01:00  INFO 4200 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : Started SpringBootCamelIntegrationApplication in 3.409 seconds (process running for 4.103)
+2025-02-12T16:13:07.262+01:00  INFO 4200 --- [spring-boot-camel-integration] [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-2) is shutting down (timeout:45s)
+2025-02-12T16:13:07.262+01:00  INFO 4200 --- [spring-boot-camel-integration] [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   : Routes stopped (total:1)
+2025-02-12T16:13:07.262+01:00  INFO 4200 --- [spring-boot-camel-integration] [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   :     Stopped route1 (direct://fileMoveRoute)
+2025-02-12T16:13:07.262+01:00  INFO 4200 --- [spring-boot-camel-integration] [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-2) shutdown in 8ms (uptime:1m7s)
+2025-02-12T16:14:26.944+01:00  INFO 11352 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : Starting SpringBootCamelIntegrationApplication using Java 17.0.12 with PID 11352 (C:\Users\Ajay kumar\Downloads\ApacheCamel\Apache-Camel\camel-sb\target\classes started by AjayS in C:\Users\Ajay kumar\Downloads\ApacheCamel\Apache-Camel\camel-sb)
+2025-02-12T16:14:26.948+01:00  INFO 11352 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : No active profile set, falling back to 1 default profile: "default"
+2025-02-12T16:14:27.034+01:00  INFO 11352 --- [spring-boot-camel-integration] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Ajay kumar\.m2\repository\com\sun\xml\bind\jaxb-core\4.0.5\jaxb-core-4.0.5.jar referenced one or more files that do not exist: file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jakarta.activation-api.jar,file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jakarta.xml.bind-api.jar
+2025-02-12T16:14:27.035+01:00  INFO 11352 --- [spring-boot-camel-integration] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Ajay kumar\.m2\repository\com\sun\xml\bind\jaxb-impl\4.0.5\jaxb-impl-4.0.5.jar referenced one or more files that do not exist: file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-impl/4.0.5/jaxb-core.jar,file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-impl/4.0.5/angus-activation.jar
+2025-02-12T16:14:27.035+01:00  INFO 11352 --- [spring-boot-camel-integration] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-12T16:14:27.036+01:00  INFO 11352 --- [spring-boot-camel-integration] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-12T16:14:29.448+01:00  INFO 11352 --- [spring-boot-camel-integration] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-12T16:14:29.471+01:00  INFO 11352 --- [spring-boot-camel-integration] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-12T16:14:29.471+01:00  INFO 11352 --- [spring-boot-camel-integration] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-12T16:14:29.599+01:00  INFO 11352 --- [spring-boot-camel-integration] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-12T16:14:29.600+01:00  INFO 11352 --- [spring-boot-camel-integration] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2563 ms
+2025-02-12T16:14:31.202+01:00  INFO 11352 --- [spring-boot-camel-integration] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-12T16:14:31.212+01:00  INFO 11352 --- [spring-boot-camel-integration] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-12T16:14:31.357+01:00  INFO 11352 --- [spring-boot-camel-integration] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-12T16:14:31.698+01:00  INFO 11352 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-2) is starting
+2025-02-12T16:14:31.718+01:00  INFO 11352 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   : Routes startup (total:1)
+2025-02-12T16:14:31.719+01:00  INFO 11352 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   :     Started route1 (direct://fileMoveRoute)
+2025-02-12T16:14:31.720+01:00  INFO 11352 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-2) started in 18ms (build:0ms init:0ms start:18ms)
+2025-02-12T16:14:31.728+01:00  INFO 11352 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : Started SpringBootCamelIntegrationApplication in 5.519 seconds (process running for 6.417)
+2025-02-12T16:15:50.970+01:00  INFO 11352 --- [spring-boot-camel-integration] [http-nio-8080-exec-1] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in the request target [/actuator/jolokia/read/org.apache.camel:context\=\*,type\=routes,name\=\* ]. The valid characters are defined in RFC 7230 and RFC 3986
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:489) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:270) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-02-12T16:16:32.636+01:00  INFO 11352 --- [spring-boot-camel-integration] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-12T16:16:32.637+01:00  INFO 11352 --- [spring-boot-camel-integration] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-12T16:16:32.639+01:00  INFO 11352 --- [spring-boot-camel-integration] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-02-12T16:18:43.688+01:00  INFO 11352 --- [spring-boot-camel-integration] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-02-12T16:18:43.918+01:00  INFO 11352 --- [spring-boot-camel-integration] [Thread-5] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-2) is shutting down (timeout:45s)
+2025-02-12T16:18:43.923+01:00  INFO 11352 --- [spring-boot-camel-integration] [Thread-5] o.a.c.impl.engine.AbstractCamelContext   : Routes stopped (total:1)
+2025-02-12T16:18:43.923+01:00  INFO 11352 --- [spring-boot-camel-integration] [Thread-5] o.a.c.impl.engine.AbstractCamelContext   :     Stopped route1 (direct://fileMoveRoute)
+2025-02-12T16:18:43.926+01:00  INFO 11352 --- [spring-boot-camel-integration] [Thread-5] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-2) shutdown in 8ms (uptime:4m12s)
+2025-02-12T16:18:44.010+01:00  INFO 11352 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : Starting SpringBootCamelIntegrationApplication using Java 17.0.12 with PID 11352 (C:\Users\Ajay kumar\Downloads\ApacheCamel\Apache-Camel\camel-sb\target\classes started by AjayS in C:\Users\Ajay kumar\Downloads\ApacheCamel\Apache-Camel\camel-sb)
+2025-02-12T16:18:44.010+01:00  INFO 11352 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : No active profile set, falling back to 1 default profile: "default"
+2025-02-12T16:18:44.498+01:00  INFO 11352 --- [spring-boot-camel-integration] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-12T16:18:44.500+01:00  INFO 11352 --- [spring-boot-camel-integration] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-12T16:18:44.501+01:00  INFO 11352 --- [spring-boot-camel-integration] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-12T16:18:44.530+01:00  INFO 11352 --- [spring-boot-camel-integration] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-12T16:18:44.530+01:00  INFO 11352 --- [spring-boot-camel-integration] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 517 ms
+2025-02-12T16:18:44.813+01:00  INFO 11352 --- [spring-boot-camel-integration] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-12T16:18:44.817+01:00  INFO 11352 --- [spring-boot-camel-integration] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-12T16:18:44.848+01:00  INFO 11352 --- [spring-boot-camel-integration] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-12T16:18:44.887+01:00  INFO 11352 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-4) is starting
+2025-02-12T16:18:44.890+01:00  INFO 11352 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   : Routes startup (total:1)
+2025-02-12T16:18:44.890+01:00  INFO 11352 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   :     Started route2 (direct://fileMoveRoute)
+2025-02-12T16:18:44.891+01:00  INFO 11352 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-4) started in 2ms (build:0ms init:0ms start:2ms)
+2025-02-12T16:18:44.892+01:00  INFO 11352 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : Started SpringBootCamelIntegrationApplication in 0.916 seconds (process running for 259.581)
+2025-02-12T16:18:44.896+01:00  INFO 11352 --- [spring-boot-camel-integration] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   JmxAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.jmx.export.MBeanExporter' (OnClassCondition)
+      - @ConditionalOnProperty (spring.jmx.enabled=true) matched (OnPropertyCondition)
+
+   JmxAutoConfiguration#mbeanExporter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.jmx.export.MBeanExporter; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   JmxAutoConfiguration#mbeanServer matched:
+      - @ConditionalOnMissingBean (types: javax.management.MBeanServer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JmxAutoConfiguration#objectNamingStrategy matched:
+      - @ConditionalOnMissingBean (types: org.springframework.jmx.export.naming.ObjectNamingStrategy; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   JmxEndpointAutoConfiguration matched:
+      - @ConditionalOnProperty (spring.jmx.enabled=true) matched (OnPropertyCondition)
+
+   JmxEndpointAutoConfiguration#endpointObjectNameFactory matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.endpoint.jmx.EndpointObjectNameFactory; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   JmxEndpointAutoConfiguration#jmxAnnotationEndpointDiscoverer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.endpoint.jmx.JmxEndpointsSupplier; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JmxEndpointAutoConfiguration#jmxMBeanExporter matched:
+      - @ConditionalOnSingleCandidate (types: javax.management.MBeanServer; SearchStrategy: all) found a single bean 'mbeanServer' (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2025-02-12T16:18:48.972+01:00  INFO 11352 --- [spring-boot-camel-integration] [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-4) is shutting down (timeout:45s)
+2025-02-12T16:18:48.974+01:00  INFO 11352 --- [spring-boot-camel-integration] [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   : Routes stopped (total:1)
+2025-02-12T16:18:48.974+01:00  INFO 11352 --- [spring-boot-camel-integration] [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   :     Stopped route2 (direct://fileMoveRoute)
+2025-02-12T16:18:48.975+01:00  INFO 11352 --- [spring-boot-camel-integration] [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-4) shutdown in 3ms (uptime:4s)
+2025-02-12T16:19:03.813+01:00  INFO 14048 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : Starting SpringBootCamelIntegrationApplication using Java 17.0.12 with PID 14048 (C:\Users\Ajay kumar\Downloads\ApacheCamel\Apache-Camel\camel-sb\target\classes started by AjayS in C:\Users\Ajay kumar\Downloads\ApacheCamel\Apache-Camel\camel-sb)
+2025-02-12T16:19:03.817+01:00  INFO 14048 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : No active profile set, falling back to 1 default profile: "default"
+2025-02-12T16:19:03.896+01:00  INFO 14048 --- [spring-boot-camel-integration] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Ajay kumar\.m2\repository\com\sun\xml\bind\jaxb-core\4.0.5\jaxb-core-4.0.5.jar referenced one or more files that do not exist: file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jakarta.activation-api.jar,file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jakarta.xml.bind-api.jar
+2025-02-12T16:19:03.897+01:00  INFO 14048 --- [spring-boot-camel-integration] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Ajay kumar\.m2\repository\com\sun\xml\bind\jaxb-impl\4.0.5\jaxb-impl-4.0.5.jar referenced one or more files that do not exist: file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-impl/4.0.5/jaxb-core.jar,file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-impl/4.0.5/angus-activation.jar
+2025-02-12T16:19:03.898+01:00  INFO 14048 --- [spring-boot-camel-integration] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-12T16:19:03.898+01:00  INFO 14048 --- [spring-boot-camel-integration] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-12T16:19:05.320+01:00  INFO 14048 --- [spring-boot-camel-integration] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-12T16:19:05.358+01:00  INFO 14048 --- [spring-boot-camel-integration] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-12T16:19:05.360+01:00  INFO 14048 --- [spring-boot-camel-integration] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-12T16:19:05.481+01:00  INFO 14048 --- [spring-boot-camel-integration] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-12T16:19:05.482+01:00  INFO 14048 --- [spring-boot-camel-integration] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1582 ms
+2025-02-12T16:19:07.404+01:00  INFO 14048 --- [spring-boot-camel-integration] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-12T16:19:07.419+01:00  INFO 14048 --- [spring-boot-camel-integration] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-12T16:19:07.573+01:00  INFO 14048 --- [spring-boot-camel-integration] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-12T16:19:07.945+01:00  INFO 14048 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-2) is starting
+2025-02-12T16:19:07.968+01:00  INFO 14048 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   : Routes startup (total:1)
+2025-02-12T16:19:07.968+01:00  INFO 14048 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   :     Started route1 (direct://fileMoveRoute)
+2025-02-12T16:19:07.969+01:00  INFO 14048 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-2) started in 20ms (build:0ms init:0ms start:20ms)
+2025-02-12T16:19:07.976+01:00  INFO 14048 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : Started SpringBootCamelIntegrationApplication in 4.892 seconds (process running for 5.801)
+2025-02-12T16:20:21.921+01:00  WARN 14048 --- [spring-boot-camel-integration] [RMI TCP Connection(5)-192.168.56.1] o.s.boot.actuate.jms.JmsHealthIndicator  : JMS health check failed
+
+jakarta.jms.JMSException: Could not connect to broker URL: tcp://localhost:61616. Reason: java.net.ConnectException: Connection refused: no further information
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:49) ~[activemq-client-6.1.5.jar:6.1.5]
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:423) ~[activemq-client-6.1.5.jar:6.1.5]
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:353) ~[activemq-client-6.1.5.jar:6.1.5]
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:245) ~[activemq-client-6.1.5.jar:6.1.5]
+	at org.springframework.jms.connection.SingleConnectionFactory.doCreateConnection(SingleConnectionFactory.java:452) ~[spring-jms-6.1.16.jar:6.1.16]
+	at org.springframework.jms.connection.SingleConnectionFactory.initConnection(SingleConnectionFactory.java:414) ~[spring-jms-6.1.16.jar:6.1.16]
+	at org.springframework.jms.connection.SingleConnectionFactory.getConnection(SingleConnectionFactory.java:328) ~[spring-jms-6.1.16.jar:6.1.16]
+	at org.springframework.jms.connection.SingleConnectionFactory.createConnection(SingleConnectionFactory.java:243) ~[spring-jms-6.1.16.jar:6.1.16]
+	at org.springframework.boot.actuate.jms.JmsHealthIndicator.doHealthCheck(JmsHealthIndicator.java:51) ~[spring-boot-actuator-3.3.8.jar:3.3.8]
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82) ~[spring-boot-actuator-3.3.8.jar:3.3.8]
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37) ~[spring-boot-actuator-3.3.8.jar:3.3.8]
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:82) ~[spring-boot-actuator-3.3.8.jar:3.3.8]
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:41) ~[spring-boot-actuator-3.3.8.jar:3.3.8]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getLoggedHealth(HealthEndpointSupport.java:172) ~[spring-boot-actuator-3.3.8.jar:3.3.8]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:145) ~[spring-boot-actuator-3.3.8.jar:3.3.8]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateContribution(HealthEndpointSupport.java:156) ~[spring-boot-actuator-3.3.8.jar:3.3.8]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:141) ~[spring-boot-actuator-3.3.8.jar:3.3.8]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:110) ~[spring-boot-actuator-3.3.8.jar:3.3.8]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:81) ~[spring-boot-actuator-3.3.8.jar:3.3.8]
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:76) ~[spring-boot-actuator-3.3.8.jar:3.3.8]
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:66) ~[spring-boot-actuator-3.3.8.jar:3.3.8]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281) ~[spring-core-6.1.16.jar:6.1.16]
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:74) ~[spring-boot-actuator-3.3.8.jar:3.3.8]
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60) ~[spring-boot-actuator-3.3.8.jar:3.3.8]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:124) ~[spring-boot-actuator-3.3.8.jar:3.3.8]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:97) ~[spring-boot-actuator-3.3.8.jar:3.3.8]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829) ~[na:na]
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor16.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at org.apache.activemq.transport.tcp.TcpTransport.connect(TcpTransport.java:525) ~[activemq-client-6.1.5.jar:6.1.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doStart(TcpTransport.java:488) ~[activemq-client-6.1.5.jar:6.1.5]
+	at org.apache.activemq.util.ServiceSupport.start(ServiceSupport.java:55) ~[activemq-client-6.1.5.jar:6.1.5]
+	at org.apache.activemq.transport.AbstractInactivityMonitor.start(AbstractInactivityMonitor.java:172) ~[activemq-client-6.1.5.jar:6.1.5]
+	at org.apache.activemq.transport.InactivityMonitor.start(InactivityMonitor.java:52) ~[activemq-client-6.1.5.jar:6.1.5]
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:64) ~[activemq-client-6.1.5.jar:6.1.5]
+	at org.apache.activemq.transport.WireFormatNegotiator.start(WireFormatNegotiator.java:72) ~[activemq-client-6.1.5.jar:6.1.5]
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:64) ~[activemq-client-6.1.5.jar:6.1.5]
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:64) ~[activemq-client-6.1.5.jar:6.1.5]
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:403) ~[activemq-client-6.1.5.jar:6.1.5]
+	... 50 common frames omitted
+
+2025-02-12T16:22:04.886+01:00  INFO 14048 --- [spring-boot-camel-integration] [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-2) is shutting down (timeout:45s)
+2025-02-12T16:22:04.901+01:00  INFO 14048 --- [spring-boot-camel-integration] [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   : Routes stopped (total:1)
+2025-02-12T16:22:04.901+01:00  INFO 14048 --- [spring-boot-camel-integration] [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   :     Stopped route1 (direct://fileMoveRoute)
+2025-02-12T16:22:04.901+01:00  INFO 14048 --- [spring-boot-camel-integration] [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-2) shutdown in 9ms (uptime:2m56s)
+2025-02-12T16:27:13.721+01:00  INFO 7544 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : Starting SpringBootCamelIntegrationApplication using Java 17.0.12 with PID 7544 (C:\Users\Ajay kumar\Downloads\ApacheCamel\Apache-Camel\camel-sb\target\classes started by AjayS in C:\Users\Ajay kumar\Downloads\ApacheCamel\Apache-Camel\camel-sb)
+2025-02-12T16:27:13.729+01:00  INFO 7544 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : No active profile set, falling back to 1 default profile: "default"
+2025-02-12T16:27:13.914+01:00  INFO 7544 --- [spring-boot-camel-integration] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Ajay kumar\.m2\repository\com\sun\xml\bind\jaxb-core\4.0.5\jaxb-core-4.0.5.jar referenced one or more files that do not exist: file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jakarta.activation-api.jar,file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jakarta.xml.bind-api.jar
+2025-02-12T16:27:13.915+01:00  INFO 7544 --- [spring-boot-camel-integration] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Ajay kumar\.m2\repository\com\sun\xml\bind\jaxb-impl\4.0.5\jaxb-impl-4.0.5.jar referenced one or more files that do not exist: file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-impl/4.0.5/jaxb-core.jar,file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-impl/4.0.5/angus-activation.jar
+2025-02-12T16:27:13.916+01:00  INFO 7544 --- [spring-boot-camel-integration] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-12T16:27:13.917+01:00  INFO 7544 --- [spring-boot-camel-integration] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-12T16:27:20.026+01:00  INFO 7544 --- [spring-boot-camel-integration] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-12T16:27:20.065+01:00  INFO 7544 --- [spring-boot-camel-integration] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-12T16:27:20.067+01:00  INFO 7544 --- [spring-boot-camel-integration] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-12T16:27:20.638+01:00  INFO 7544 --- [spring-boot-camel-integration] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-12T16:27:20.647+01:00  INFO 7544 --- [spring-boot-camel-integration] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6719 ms
+2025-02-12T16:27:26.121+01:00  INFO 7544 --- [spring-boot-camel-integration] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-12T16:27:26.145+01:00  INFO 7544 --- [spring-boot-camel-integration] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-12T16:27:26.406+01:00  INFO 7544 --- [spring-boot-camel-integration] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-12T16:27:27.066+01:00  INFO 7544 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-2) is starting
+2025-02-12T16:27:27.098+01:00  INFO 7544 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   : Routes startup (total:1)
+2025-02-12T16:27:27.099+01:00  INFO 7544 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   :     Started route1 (direct://fileMoveRoute)
+2025-02-12T16:27:27.101+01:00  INFO 7544 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-2) started in 30ms (build:0ms init:0ms start:30ms)
+2025-02-12T16:27:27.113+01:00  INFO 7544 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : Started SpringBootCamelIntegrationApplication in 14.549 seconds (process running for 39.375)
+2025-02-12T16:28:31.755+01:00  WARN 7544 --- [spring-boot-camel-integration] [RMI TCP Connection(2)-192.168.56.1] o.s.boot.actuate.jms.JmsHealthIndicator  : JMS health check failed
+
+jakarta.jms.JMSException: Could not connect to broker URL: tcp://localhost:61616. Reason: java.net.ConnectException: Connection refused: no further information
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:49) ~[activemq-client-6.1.5.jar:6.1.5]
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:423) ~[activemq-client-6.1.5.jar:6.1.5]
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:353) ~[activemq-client-6.1.5.jar:6.1.5]
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:245) ~[activemq-client-6.1.5.jar:6.1.5]
+	at org.springframework.jms.connection.SingleConnectionFactory.doCreateConnection(SingleConnectionFactory.java:452) ~[spring-jms-6.1.16.jar:6.1.16]
+	at org.springframework.jms.connection.SingleConnectionFactory.initConnection(SingleConnectionFactory.java:414) ~[spring-jms-6.1.16.jar:6.1.16]
+	at org.springframework.jms.connection.SingleConnectionFactory.getConnection(SingleConnectionFactory.java:328) ~[spring-jms-6.1.16.jar:6.1.16]
+	at org.springframework.jms.connection.SingleConnectionFactory.createConnection(SingleConnectionFactory.java:243) ~[spring-jms-6.1.16.jar:6.1.16]
+	at org.springframework.boot.actuate.jms.JmsHealthIndicator.doHealthCheck(JmsHealthIndicator.java:51) ~[spring-boot-actuator-3.3.8.jar:3.3.8]
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82) ~[spring-boot-actuator-3.3.8.jar:3.3.8]
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37) ~[spring-boot-actuator-3.3.8.jar:3.3.8]
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:82) ~[spring-boot-actuator-3.3.8.jar:3.3.8]
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:41) ~[spring-boot-actuator-3.3.8.jar:3.3.8]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getLoggedHealth(HealthEndpointSupport.java:172) ~[spring-boot-actuator-3.3.8.jar:3.3.8]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:145) ~[spring-boot-actuator-3.3.8.jar:3.3.8]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateContribution(HealthEndpointSupport.java:156) ~[spring-boot-actuator-3.3.8.jar:3.3.8]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:141) ~[spring-boot-actuator-3.3.8.jar:3.3.8]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:110) ~[spring-boot-actuator-3.3.8.jar:3.3.8]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:81) ~[spring-boot-actuator-3.3.8.jar:3.3.8]
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:76) ~[spring-boot-actuator-3.3.8.jar:3.3.8]
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:66) ~[spring-boot-actuator-3.3.8.jar:3.3.8]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281) ~[spring-core-6.1.16.jar:6.1.16]
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:74) ~[spring-boot-actuator-3.3.8.jar:3.3.8]
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60) ~[spring-boot-actuator-3.3.8.jar:3.3.8]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:124) ~[spring-boot-actuator-3.3.8.jar:3.3.8]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:97) ~[spring-boot-actuator-3.3.8.jar:3.3.8]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829) ~[na:na]
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor15.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at org.apache.activemq.transport.tcp.TcpTransport.connect(TcpTransport.java:525) ~[activemq-client-6.1.5.jar:6.1.5]
+	at org.apache.activemq.transport.tcp.TcpTransport.doStart(TcpTransport.java:488) ~[activemq-client-6.1.5.jar:6.1.5]
+	at org.apache.activemq.util.ServiceSupport.start(ServiceSupport.java:55) ~[activemq-client-6.1.5.jar:6.1.5]
+	at org.apache.activemq.transport.AbstractInactivityMonitor.start(AbstractInactivityMonitor.java:172) ~[activemq-client-6.1.5.jar:6.1.5]
+	at org.apache.activemq.transport.InactivityMonitor.start(InactivityMonitor.java:52) ~[activemq-client-6.1.5.jar:6.1.5]
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:64) ~[activemq-client-6.1.5.jar:6.1.5]
+	at org.apache.activemq.transport.WireFormatNegotiator.start(WireFormatNegotiator.java:72) ~[activemq-client-6.1.5.jar:6.1.5]
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:64) ~[activemq-client-6.1.5.jar:6.1.5]
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:64) ~[activemq-client-6.1.5.jar:6.1.5]
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:403) ~[activemq-client-6.1.5.jar:6.1.5]
+	... 50 common frames omitted
+
+2025-02-12T16:33:00.388+01:00  INFO 9080 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : Starting SpringBootCamelIntegrationApplication using Java 17.0.12 with PID 9080 (C:\Users\Ajay kumar\Downloads\ApacheCamel\Apache-Camel\camel-sb\target\classes started by AjayS in C:\Users\Ajay kumar\Downloads\ApacheCamel\Apache-Camel\camel-sb)
+2025-02-12T16:33:00.395+01:00  INFO 9080 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : No active profile set, falling back to 1 default profile: "default"
+2025-02-12T16:33:00.579+01:00  INFO 9080 --- [spring-boot-camel-integration] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Ajay kumar\.m2\repository\com\sun\xml\bind\jaxb-core\4.0.5\jaxb-core-4.0.5.jar referenced one or more files that do not exist: file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jakarta.activation-api.jar,file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jakarta.xml.bind-api.jar
+2025-02-12T16:33:00.580+01:00  INFO 9080 --- [spring-boot-camel-integration] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Ajay kumar\.m2\repository\com\sun\xml\bind\jaxb-impl\4.0.5\jaxb-impl-4.0.5.jar referenced one or more files that do not exist: file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-impl/4.0.5/jaxb-core.jar,file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-impl/4.0.5/angus-activation.jar
+2025-02-12T16:33:00.581+01:00  INFO 9080 --- [spring-boot-camel-integration] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-12T16:33:00.582+01:00  INFO 9080 --- [spring-boot-camel-integration] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-12T16:33:04.906+01:00  INFO 9080 --- [spring-boot-camel-integration] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-12T16:33:04.938+01:00  INFO 9080 --- [spring-boot-camel-integration] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-12T16:33:04.939+01:00  INFO 9080 --- [spring-boot-camel-integration] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-12T16:33:05.131+01:00  INFO 9080 --- [spring-boot-camel-integration] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-12T16:33:05.132+01:00  INFO 9080 --- [spring-boot-camel-integration] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4548 ms
+2025-02-12T16:33:08.449+01:00  INFO 9080 --- [spring-boot-camel-integration] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-12T16:33:08.466+01:00  INFO 9080 --- [spring-boot-camel-integration] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-12T16:33:08.700+01:00  INFO 9080 --- [spring-boot-camel-integration] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-12T16:33:09.343+01:00  INFO 9080 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-2) is starting
+2025-02-12T16:33:09.374+01:00  INFO 9080 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   : Routes startup (total:1)
+2025-02-12T16:33:09.374+01:00  INFO 9080 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   :     Started route1 (direct://fileMoveRoute)
+2025-02-12T16:33:09.375+01:00  INFO 9080 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-2) started in 27ms (build:0ms init:0ms start:27ms)
+2025-02-12T16:33:09.387+01:00  INFO 9080 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : Started SpringBootCamelIntegrationApplication in 10.525 seconds (process running for 13.565)
+2025-02-12T16:35:32.458+01:00  INFO 9080 --- [spring-boot-camel-integration] [http-nio-8080-exec-1] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in the request target [/actuator/jolokia/read/org.apache.camel:context\=\*,type\=routes,name\=\* ]. The valid characters are defined in RFC 7230 and RFC 3986
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:489) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:270) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-02-12T16:39:23.115+01:00  INFO 1676 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : Starting SpringBootCamelIntegrationApplication using Java 17.0.12 with PID 1676 (C:\Users\Ajay kumar\Downloads\ApacheCamel\Apache-Camel\camel-sb\target\classes started by AjayS in C:\Users\Ajay kumar\Downloads\ApacheCamel\Apache-Camel\camel-sb)
+2025-02-12T16:39:23.122+01:00  INFO 1676 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : No active profile set, falling back to 1 default profile: "default"
+2025-02-12T16:39:23.237+01:00  INFO 1676 --- [spring-boot-camel-integration] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Ajay kumar\.m2\repository\com\sun\xml\bind\jaxb-core\4.0.5\jaxb-core-4.0.5.jar referenced one or more files that do not exist: file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jakarta.activation-api.jar,file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jakarta.xml.bind-api.jar
+2025-02-12T16:39:23.238+01:00  INFO 1676 --- [spring-boot-camel-integration] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Ajay kumar\.m2\repository\com\sun\xml\bind\jaxb-impl\4.0.5\jaxb-impl-4.0.5.jar referenced one or more files that do not exist: file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-impl/4.0.5/jaxb-core.jar,file:/C:/Users/Ajay%20kumar/.m2/repository/com/sun/xml/bind/jaxb-impl/4.0.5/angus-activation.jar
+2025-02-12T16:39:23.238+01:00  INFO 1676 --- [spring-boot-camel-integration] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-12T16:39:23.240+01:00  INFO 1676 --- [spring-boot-camel-integration] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-12T16:39:26.088+01:00  INFO 1676 --- [spring-boot-camel-integration] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-12T16:39:26.115+01:00  INFO 1676 --- [spring-boot-camel-integration] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-12T16:39:26.118+01:00  INFO 1676 --- [spring-boot-camel-integration] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-12T16:39:26.282+01:00  INFO 1676 --- [spring-boot-camel-integration] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-12T16:39:26.283+01:00  INFO 1676 --- [spring-boot-camel-integration] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3041 ms
+2025-02-12T16:39:28.338+01:00  INFO 1676 --- [spring-boot-camel-integration] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-12T16:39:28.353+01:00  INFO 1676 --- [spring-boot-camel-integration] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-12T16:39:28.534+01:00  INFO 1676 --- [spring-boot-camel-integration] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-12T16:39:28.940+01:00  INFO 1676 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-2) is starting
+2025-02-12T16:39:28.967+01:00  INFO 1676 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   : Routes startup (total:1)
+2025-02-12T16:39:28.968+01:00  INFO 1676 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   :     Started route1 (direct://fileMoveRoute)
+2025-02-12T16:39:28.968+01:00  INFO 1676 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-2) started in 24ms (build:0ms init:0ms start:24ms)
+2025-02-12T16:39:28.978+01:00  INFO 1676 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : Started SpringBootCamelIntegrationApplication in 6.659 seconds (process running for 7.626)
+2025-02-12T16:42:03.192+01:00  INFO 1676 --- [spring-boot-camel-integration] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2025-02-12T16:42:03.721+01:00  INFO 1676 --- [spring-boot-camel-integration] [Thread-5] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-2) is shutting down (timeout:45s)
+2025-02-12T16:42:03.731+01:00  INFO 1676 --- [spring-boot-camel-integration] [Thread-5] o.a.c.impl.engine.AbstractCamelContext   : Routes stopped (total:1)
+2025-02-12T16:42:03.732+01:00  INFO 1676 --- [spring-boot-camel-integration] [Thread-5] o.a.c.impl.engine.AbstractCamelContext   :     Stopped route1 (direct://fileMoveRoute)
+2025-02-12T16:42:03.740+01:00  INFO 1676 --- [spring-boot-camel-integration] [Thread-5] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-2) shutdown in 18ms (uptime:2m34s)
+2025-02-12T16:42:03.896+01:00  INFO 1676 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : Starting SpringBootCamelIntegrationApplication using Java 17.0.12 with PID 1676 (C:\Users\Ajay kumar\Downloads\ApacheCamel\Apache-Camel\camel-sb\target\classes started by AjayS in C:\Users\Ajay kumar\Downloads\ApacheCamel\Apache-Camel\camel-sb)
+2025-02-12T16:42:03.897+01:00  INFO 1676 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : No active profile set, falling back to 1 default profile: "default"
+2025-02-12T16:42:04.816+01:00  INFO 1676 --- [spring-boot-camel-integration] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-12T16:42:04.818+01:00  INFO 1676 --- [spring-boot-camel-integration] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-12T16:42:04.818+01:00  INFO 1676 --- [spring-boot-camel-integration] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-12T16:42:04.885+01:00  INFO 1676 --- [spring-boot-camel-integration] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-12T16:42:04.886+01:00  INFO 1676 --- [spring-boot-camel-integration] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 986 ms
+2025-02-12T16:42:05.570+01:00  INFO 1676 --- [spring-boot-camel-integration] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-12T16:42:05.578+01:00  INFO 1676 --- [spring-boot-camel-integration] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-12T16:42:05.661+01:00  INFO 1676 --- [spring-boot-camel-integration] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-12T16:42:05.762+01:00  INFO 1676 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-4) is starting
+2025-02-12T16:42:05.770+01:00  INFO 1676 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   : Routes startup (total:1)
+2025-02-12T16:42:05.771+01:00  INFO 1676 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   :     Started route2 (direct://fileMoveRoute)
+2025-02-12T16:42:05.772+01:00  INFO 1676 --- [spring-boot-camel-integration] [restartedMain] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-4) started in 7ms (build:0ms init:0ms start:7ms)
+2025-02-12T16:42:05.776+01:00  INFO 1676 --- [spring-boot-camel-integration] [restartedMain] .s.SpringBootCamelIntegrationApplication : Started SpringBootCamelIntegrationApplication in 1.937 seconds (process running for 164.423)
+2025-02-12T16:42:05.783+01:00  INFO 1676 --- [spring-boot-camel-integration] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-02-12T16:42:17.129+01:00  INFO 1676 --- [spring-boot-camel-integration] [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-4) is shutting down (timeout:45s)
+2025-02-12T16:42:17.132+01:00  INFO 1676 --- [spring-boot-camel-integration] [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   : Routes stopped (total:1)
+2025-02-12T16:42:17.133+01:00  INFO 1676 --- [spring-boot-camel-integration] [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   :     Stopped route2 (direct://fileMoveRoute)
+2025-02-12T16:42:17.134+01:00  INFO 1676 --- [spring-boot-camel-integration] [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.9.0 (camel-4) shutdown in 5ms (uptime:11s)

@@ -44,7 +44,9 @@ public class MainApp {
 	}
 }
 -----------
-implementing the Idempotent Respository which will filter out duplicate messages. Also we will be using the File Name as the id which is stored in the Idempotent Repository for keeping track of the files processed.
+implementing the Idempotent Respository which will filter out duplicate messages. 
+Also we will be using the File Name as the id which is stored in the Idempotent Repository 
+for keeping track of the files processed.
 
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;

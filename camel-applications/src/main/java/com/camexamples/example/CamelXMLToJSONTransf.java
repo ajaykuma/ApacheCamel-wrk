@@ -2,7 +2,6 @@ package com.camexamples.example;
 
 import org.apache.camel.CamelContext;
 import org.apache.camel.impl.DefaultCamelContext;
-
 import jakarta.xml.bind.Unmarshaller;
 
 import javax.xml.bind.JAXBContext;

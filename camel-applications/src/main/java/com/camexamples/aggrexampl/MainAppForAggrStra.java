@@ -24,11 +24,11 @@ public class MainAppForAggrStra{
         }
         ProducerTemplate template = context.createProducerTemplate();
         //Use instance of template
-        template.sendBodyAndHeader("direct:start", "one", "Id", 1);
-        template.sendBodyAndHeader("direct:start", "two", "Id", 1);
-        template.sendBodyAndHeader("direct:start", "three", "Id", 2);
-        template.sendBodyAndHeader("direct:start", "four", "Id", 1);
-        template.sendBodyAndHeader("direct:start", "five", "Id", 1);
+        template.sendBodyAndHeader("direct:start", "twenty-one", "Id", 10);
+        template.sendBodyAndHeader("direct:start", "twenty-two", "Id", 11);
+        template.sendBodyAndHeader("direct:start", "twenty-three", "Id", 21);
+        template.sendBodyAndHeader("direct:start", "twenty-four", "Id", 21);
+        template.sendBodyAndHeader("direct:start", "twenty-five", "Id", 11);
     }
 }
 

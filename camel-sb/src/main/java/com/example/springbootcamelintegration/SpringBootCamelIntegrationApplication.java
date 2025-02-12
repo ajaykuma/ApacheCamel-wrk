@@ -1,5 +1,7 @@
 package com.example.springbootcamelintegration;
 
+import org.apache.camel.CamelContext;
+import org.apache.camel.impl.DefaultCamelContext;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -8,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 public class SpringBootCamelIntegrationApplication {
+	 CamelContext context = new DefaultCamelContext();
 
     public static void main(String[] args) {
         SpringApplication.run(SpringBootCamelIntegrationApplication.class, args); // Start the Spring Boot application
