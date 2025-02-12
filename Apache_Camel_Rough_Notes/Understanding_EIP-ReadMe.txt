@@ -223,7 +223,9 @@ Specify this option in order to shut down batch consumers gracefully.
 --Test with parallel processing
 refer: ConsumeActiveMQ9.java
 ----------------------------------------------
-
+Multicasting:
+Idempotence:
+--------------------------------------------
 refer: Consumeidem1.java
 refer: Consumeidem2.java
 

@@ -244,4 +244,108 @@ src>main>resources
 applicationContext*.xml files.
 
 ----------------
+Camel & Spring boot :
+Create a 'spring-boot-camel-integration' project using spring initializer
+
+package: com.example.springbootcamelintegration
+
+configure application.properties in src/main/resources
+# Application name
+spring.application.name=spring-boot-camel-integration
+
+# Log level for Apache Camel
+logging.level.org.apache.camel=INFO
+
+# Log file name
+logging.file.name=application.log
+
+in src/main/java > com.example.springbootcamelintegration
+--has SpringBootCamelIntegrationApplication.java by default
+----------
+package com.example.springbootcamelintegration;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+/**
+ * SpringBootCamelIntegrationApplication class serves as the entry point of the Spring Boot application.
+ */
+@SpringBootApplication
+public class SpringBootCamelIntegrationApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(SpringBootCamelIntegrationApplication.class, args); // Start the Spring Boot application
+    }
+}
+-----------
+--within package create initial Aggregator route/FileMoveRoute.java
+The FileMoveRoute class extends RouteBuilder and overrides the configure() method to define the route.
+The route starts from the direct:fileMoveRoute endpoint, 
+logs the file name being processed, and moves the file to the specified destination directory.
+--
+package com.example.springbootcamelintegration;
+
+import org.apache.camel.builder.RouteBuilder;
+import org.springframework.stereotype.Component;
+
+/**
+ * FileMoveRoute class defines a simple Camel route that moves files
+ * from a source directory to a destination directory.
+ */
+@Component
+public class FileMoveRoute extends RouteBuilder {
+
+    @Override
+    public void configure() throws Exception {
+        // Define the route starting from a direct component
+       from("direct:fileMoveRoute")
+       .log("Processing file: ${file:name}") // Log the name of the file being processed
+       .to("file:Testing Folder?fileName=${file:name.noext}.bak"); // Move the file to the destination directory and rename it with a .bak extension
+    }
+}
+
+--
+
+Create the Controller to Trigger the Camel Route
+The FileController class is annotated with @RestController, making it a Spring MVC controller.
+It uses ProducerTemplate to send messages to the Camel route.
+The startFileMove() method triggers the Camel route by sending a message to the direct:fileMoveRoute endpoint.
+
+--
+package com.example.springbootcamelintegration;
+
+import org.apache.camel.ProducerTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+/**
+ * FileController class provides a REST endpoint to trigger the Camel route.
+ */
+@RestController
+public class FileController {
+
+    @Autowired
+    private ProducerTemplate producerTemplate; // Inject ProducerTemplate to send messages to Camel routes
+
+    /**
+     * This endpoint starts the file move process by triggering the Camel route.
+     *
+     * @return String message indicating the start of the process
+     */
+    @GetMapping("/startFileMove")
+    public String startFileMove() {
+        producerTemplate.sendBody("direct:fileMoveRoute", "Sample content"); // Trigger the Camel route with sample content
+        return "File move process started!";
+    }
+}
+
+---------------
+Run the main application
+Access browser : http://localhost:8080/startFileMove (to check)
+
+We can use tool such as Postman to send GET request
+After sending the request, check the destination directory to verify that the file has been moved and renamed with a .bak extension.
+----------------
+
 

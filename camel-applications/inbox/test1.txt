@@ -1,2 +1,2 @@
-This is a sample content for application 2.
-Lets see if it gets transformed.
+this is a sample data to 
+be written in ActiveMQ queue

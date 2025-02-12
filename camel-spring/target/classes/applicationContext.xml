@@ -21,7 +21,7 @@
     <property name="driverClassName" value="com.mysql.jdbc.Driver" />
     <property name="url" value="jdbc:mysql://localhost/cameldb" />
     <property name="username" value="root" />
-    <property name="password" value="rida" />
+    <property name="password" value="cool123" />
 </bean>
 
 <jdbc:initialize-database data-source="dataSource"

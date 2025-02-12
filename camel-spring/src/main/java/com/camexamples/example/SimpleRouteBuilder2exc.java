@@ -17,9 +17,12 @@ public class SimpleRouteBuilder2exc extends RouteBuilder {
                 System.out.println("handling ex");
             }
         }).log("Received body ");
-//having one more route will create a problem say something like this
-//from("file://input_box?noop=true").process(new MyProcessor()).to("file://outputFolder");
-        //Note**doTry and DoCatch disadvantage is --configured for a single route
+        
+        //having one more route will create a problem say something like this
+        from("file://input_box?noop=true").to("file://output2Folder")
+        .log("Received file now ");
+        //from("file://input_box?noop=true").process(new MyProcessor()).to("file://outputFolder");
+        //Note**doTry and DoCatch disadvantage is --configured for a single route*/
     }
 
 }
